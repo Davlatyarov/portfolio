@@ -1,0 +1,319 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>portfolio</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet" media="screen">
+
+  <link href="{% static "portfolio/css/bootstrap.min.css" %}" rel="stylesheet" media="screen">
+  <link href="{% static "portfolio/css/style.css" %}" rel="stylesheet" media="screen">
+  <link href="{% static "portfolio/color/default.css" %}" rel="stylesheet" media="screen">
+  <style>
+      .dark-text {
+        color: #333;
+        font-weight: 400;
+    }
+
+    /* Улучшенный стиль для "Najot Ta'lim" */
+    .highlighted-text {
+        color: #00c1c1; /* Синий цвет */
+        font-weight: 600; /* Полужирный */
+    }
+</style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle nav</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- Logo text or image -->
+        <a class="navbar-brand" href="index.html">Alstar</a>
+
+      </div>
+      <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="current"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#portfolio">Works</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- intro area -->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="item active">
+            <div class="carousel-background"><img src="{% static "portfolio/img/intro/1.jpg" %}" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animated fadeInDown">Specializing in Django Development</h2>
+                <p class="animated fadeInUp">I am a professional backend developer with expertise in Python and Django. My goal is to create reliable and efficient web applications.</p>
+                <a href="#about" class="btn-get-started animated fadeInUp">Learn More</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Slide 2 -->
+          <div class="item">
+            <div class="carousel-background"><img src="{% static "portfolio/img/intro/2.jpg" %}" alt=""></div>
+            <div class="carousel-container">
+                <div class="carousel-content">
+                    <h2 class="animated fadeInDown">Creativity Meets Technology</h2>
+                    <p class="animated fadeInUp">Combining creativity with cutting-edge technology is my passion. With Python and Django, I craft innovative solutions that not only look great but also perform exceptionally well. Let's build something amazing together.</p>
+                    <a href="#about" class="btn-get-started animated fadeInUp">Learn More</a>
+                </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="item">
+            <div class="carousel-background"><img src="{% static "portfolio/img/intro/3.jpg" %}" alt=""></div>
+            <div class="carousel-container">
+                <div class="carousel-content">
+                    <h2 class="animated fadeInDown">Passion for Problem-Solving</h2>
+                    <p class="animated fadeInUp">I thrive on challenges and enjoy solving complex problems using Python and Django. My goal is to create scalable and efficient solutions that meet the unique needs of each project. Let's turn your ideas into reality.</p>
+                    <a href="#about" class="btn-get-started animated fadeInUp">Learn More</a>
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon fa fa-angle-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon fa fa-angle-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+
+<!-- About -->
+<section id="about" class="home-section bg-white">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-offset-2 col-md-8">
+              <div class="section-heading">
+                  <h2>About me</h2>
+                  <div class="heading-line"></div>
+                  <h5 class="dark-text">Graduated from <span class="highlighted-text">Najot Ta'lim</span> with a focus on backend Python development. Passionate about creating efficient and scalable web applications.</h5>
+                </div>
+      </div>
+      <div class="row wow fadeInUp">
+          <div class="col-md-6 about-img">
+              <img src="{% static "portfolio/img/me.jpg" %}" alt="Muhammadqodir Davlatyorov">
+          </div>
+
+          <div class="col-md-6 content">
+              <h2>Muhammadqodir Davlatyorov</h2>
+              <h2>Years:18</h2>
+              <h2>Languages:<br><span class="highlighted-text">Uzbek</span>:native, <span class="highlighted-text">Russian</span>:C1, <span class="highlighted-text">English</span>:B2.</h2>
+              <h3 class="highlighted-text"><span class="highlighted-text">With expertise in Python, Django, and DRF API, I specialize in building robust web solutions.</span></h3>
+              <p>
+                  Hi! I'm Muhammadqodir Davlatyorov, an 18-year-old aspiring backend developer. My skills include <span class="highlighted-text">Python, Django, DRF API, PostgreSQL, HTML, Git, Linux, and Figma</span>. I have extensive experience working with <span class="highlighted-text">Linux</span>, which has honed my problem-solving abilities and attention to detail.
+              </p>
+              <p>
+                  I am passionate about leveraging my technical skills to create efficient and user-friendly web applications. Whether it's crafting clean and maintainable code or optimizing database queries, I strive for excellence in every project I undertake.
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+  <!-- Parallax 1 -->
+  <section id="parallax1" class="home-section parallax" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="color-light">
+            <h2 class="wow bounceInDown" data-wow-delay="0.5s">Details are the key for perfection</h2>
+            <p class="lead wow bounceInUp" data-wow-delay="1s">We mix all detailed things together</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Works -->
+  <section id="portfolio" class="home-section bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div class="section-heading">
+            <h2>Works</h2>
+            <div class="heading-line"></div>
+            <p>We’ve been building unique digital products, platforms, and experiences for the past 8 mounth.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+
+          <ul id="og-grid" class="og-grid">
+            <li>
+              <a href="#" data-largesrc="{% static "portfolio/img/works/clinic2.jpg" %}" data-title="Clinic Booking System" data-description='The "Clinic Booking System" is a web application designed to simplify the process of scheduling appointments with doctors. Users can browse through doctor profiles to learn about their specialties, experience, and availability. The booking system allows users to select convenient appointment times, with automated notifications to remind them of upcoming visits. Additionally, patients can leave reviews and ratings based on their experiences with the doctors. The application is built using Python and Django and integrates with a PostgreSQL database.'>
+                <img src="{% static "portfolio/img/works/thumbs/clinic1.jpg" %}" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#" data-largesrc="{% static "portfolio/img/works/places2.jpg" %}" data-title="Places" data-description='The "Places" project is a web platform where users can discover and share cafes and restaurants. Users can add new spots, including details like name, location, and cuisine type. They can also highlight popular dishes available. The platform features an interactive commenting system for users to share reviews and recommendations. Additionally, users can bookmark their favorite places for easy access, making it simple to revisit and keep track of their favorite dining spots.'>
+                <img src="{% static "portfolio/img/works/thumbs/places1.jpg" %}" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#" data-largesrc="{% static "portfolio/img/works/shop2.jpg" %}" data-title="Shop" data-description='The "Shop" project is an e-commerce platform for buying computers. Users can view computer models with details and prices, add items to their cart, and checkout securely. The platform also features order tracking and customer support. Built with Python and Django, it offers a user-friendly shopping experience.'>
+                <img src="{% static "portfolio/img/works/thumbs/shop1.jpg" %}" alt="img01" />
+              </a>
+            </li>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax 2 -->
+  <section id="parallax2" class="home-section parallax" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="clients">
+            <li class="wow fadeInDown" data-wow-delay="0.3s"><a href="#"><img src="img/clients/1.png" alt="" /></a></li>
+            <li class="wow fadeInDown" data-wow-delay="0.6s"><a href="#"><img src="img/clients/2.png" alt="" /></a></li>
+            <li class="wow fadeInDown" data-wow-delay="0.9s"><a href="#"><img src="img/clients/3.png" alt="" /></a></li>
+            <li class="wow fadeInDown" data-wow-delay="1.1s"><a href="#"><img src="img/clients/4.png" alt="" /></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom widget -->
+  <section id="bottom-widget" class="home-section bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="contact-widget wow bounceInLeft">
+            <i class="fa fa-map-marker fa-4x"></i>
+            <h5>place of residence</h5>
+            <p>
+              Fergana region,<br />Altiarik center
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-widget wow bounceInUp">
+            <i class="fa fa-phone fa-4x"></i>
+            <h5>Call</h5>
+            <p>
+              +998 95 021 24 01
+
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-widget wow bounceInRight">
+            <i class="fa fa-envelope fa-4x"></i>
+            <h5>Email me</h5>
+            <p>
+              davlatyarov06@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row mar-top30">
+        <div class="col-md-12">
+          <h5>I'm on social networks</h5>
+          <ul class="social-network">
+            <li><a href="https://www.instagram.com/_davlatyarov?utm_source=qr&igsh=d2RrdHhrdHJseG41">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span></a>
+            </li>
+            <li><a href="https://t.me/davlatyarov06">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                </span></a>
+            </li>
+            <li><a href="https://pin.it/3cWEzN7qx">
+                <span class="fa-stack fa-2x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                </span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Copyright &copy; Alstar. All rights reserved.</p>
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Alstar
+            -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- js -->
+  <script src="{% static "portfolio/js/jquery.js" %}"></script>
+  <script src="{% static "portfolio/js/bootstrap.min.js" %}"></script>
+  <script src="{% static "portfolio/js/wow.min.js" %}"></script>
+  <script src="{% static "portfolio/js/jquery.scrollTo.min.js" %}"></script>
+  <script src="{% static "portfolio/js/jquery.nav.js" %}"></script>
+  <script src="{% static "portfolio/js/modernizr.custom.js" %}"></script>
+  <script src="{% static "portfolio/js/grid.js" %}"></script>
+  <script src="{% static "portfolio/js/stellar.js" %}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{% static "portfolio/contactform/contactform.js" %}"></script>
+
+  <!-- Template Custom Javascript File -->
+  <script src="{% static "portfolio/js/custom.js" %}"></script>
+
+</body>
+
+</html>
